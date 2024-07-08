@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Document</title>
 </head>
 <body>
+    <div class="navigation-bar">
     <header>
         <nav>
             <div class="nav-logo">
@@ -17,18 +20,19 @@
             </div>
             <div class="nav-menu">
                 <ul>
-                    <li><a href="" class="Home">Home</a></li>
-                    <li><a href="">Skills</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
             <button class="resume">Download Resume<img src="pdf.svg" width="20px" alt=""></button>
         </nav>
     </header>
     <div class="seperator"></div>
+    </div>
     <main class="content">
-        <div class="content-box">
+        <section class="content-box" id="home">
         <div class="content-text">
         <div class="name">
             <span>Tanmoy Talukdar</span>
@@ -40,11 +44,11 @@
             <p>Hello! I'm an aspiring frontend developer with a keen interest in designing, programming, and machine learning. I am eager to apply my diverse skill set and enthusiasm to innovative and challenging projects.
             </p>
         </div>
-        <button class="resume">Download Resume<img src="pdf.svg" width="20px" alt=""></button>
+        <button class="resume-btn">Download Resume<img src="pdf.svg" width="20px" alt=""></button>
         <div class="social">
             <div class="icon"><i class="uil uil-instagram"></i></div>
             <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
-            <div class="icon"><i class="uil uil-facebook"></i></div>
+            <div class="icon"><i class="fa-brands fa-facebook-f"></i></div>
             <div class="icon"><i class="uil uil-github-alt"></i></div>
         </div>
         </div>
@@ -53,11 +57,11 @@
                 <img src="self.jpg" alt="avatar">
             </div>
           </div>
-        </div>
+        </section>
         <div class="scroll-indicator">
             <button class="scroll-button"><div class="mouse"></div></button>
         </div>
-        <section class="skills">
+        <section class="skills" id="skills">
             <div class="skills-heading">
                 <h4>Skills</h4>
                 <p>Welcome to My Skills Section! Discover the wide array of skills I possess, from frontend development and design to machine learning and competitive programming. See how my expertise and passion come together!</p>
@@ -92,7 +96,70 @@
                 <img src="illustrator.svg" width="60" alt="">
             </div>
         </section>
+        <section class="projects" id="projects">
+            <div class="projects-heading">
+                <h4>Projects</h4>
+                <p>Welcome to the projects section of my portfolio! Here you'll find a showcase of my latest and most exciting web development projects. Dive in and explore the creativity and functionality I've poured into each one.</p>
+            </div>
+            <div class="all-projects">
+            <div class="portfolio">
+                <div class="video"> <video width="422" height="250" controls autoplay muted loop>
+                    <source src="portfolio.mp4" type="video/mp4">
+                  </video></div>
+                <div class="project-info">Explore my portfolio project crafted with HTML, CSS, and JavaScript, showcasing dynamic design, responsive layouts, and interactive elements. This project reflects my expertise in front-end web development, combining creativity with technical precision to deliver engaging user experiences.</div>
+            </div>
+            <div class="netflix">
+                <div class="project-info">Explore my Netflix clone project, created with HTML, CSS, and JavaScript, showcasing responsive design, intuitive UI elements, and dynamic content presentation. This project reflects my expertise in front-end development, emphasizing meticulous design and user-centric principles to deliver an engaging experience.</div>
+                <div class="video"><video width="422" height="250" controls autoplay muted loop>
+                    <source src="Netflix.mp4" type="video/mp4">
+                  </video></div>
+            </div>
+            <div class="spotify">
+                <div class="video"><video width="422" height="250" controls autoplay muted loop>
+                    <source src="spotify.mp4" type="video/mp4">
+                  </video></div>
+                <div class="project-info">Discover my Spotify project, crafted with HTML, CSS, and JavaScript, featuring a sleek interface, responsive design, and interactive music playback features. This project showcases my proficiency in front-end development, highlighting my ability to create engaging user interfaces and seamless interactive experiences.</div>
+            </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="contact-boxes">
+            <div class="contact-info">
+                <div class="contact-info-heading">Contact Info</div>
+                <div class="contact-email-number">
+                    <div class="email">
+                        <img src="mail.svg" class="contact-handles" alt="">
+                        <p>talukdartanmay116@gmail.com</p>
+                    </div>
+                    <div class="number">
+                        <img src="phone.svg" class="contact-handles" alt="">
+                        <p>6000207181</p>
+                    </div>
+                    <div class="social-btns">
+                        <div class="icon"><i class="uil uil-instagram"></i></div>
+                        <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+                        <div class="icon"><i class="fa-brands fa-facebook-f"></i></div>
+                        <div class="icon"><i class="uil uil-github-alt"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="form">
+                <form>
+                    <input type="text" placeholder="Your Name" name="Name" required>
+                    <input type="email" placeholder="Your Email" name="Email" required>
+                    <input type="subject" placeholder="Your Subject" name="Subject" required>
+                    <textarea name="Message" placeholder="Your Message" name="Message" rows="6"></textarea>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </div>
+            </div>
+        </section>
     </main>
+    <div class="seperator"></div>
+    <footer class="footer">
+        <div class="quote">"Striving for excellence in every line of code."</div>
+        <div class="copyright"><p>2024 Tanmoy Talukdar. All rights reserved.</p></div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
