@@ -60,6 +60,42 @@ window.addEventListener('scroll', function() {
         }
     });
 });
+window.addEventListener('scroll', function() {
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.side-bar ul li a');
+
+    let current = '';
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+
+        if (pageYOffset >= sectionTop - sectionHeight / 3) {
+            current = section.getAttribute('id');
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove('active-sidebar');
+        if (link.getAttribute('href') === '#' + current) {
+            link.classList.add('active-sidebar');
+        }
+    });
+});
+
+
+const hamburger = document.querySelector('.hamburger');
+const sidebar = document.querySelector('.side-bar');
+const cross = document.querySelector('.cross');
+hamburger.addEventListener('click',function(){
+    sidebar.style.right = 0;
+    hamburger.style.opacity = 0.1;
+});
+cross.addEventListener('click',function(){
+    sidebar.style.right = "-500px";
+    hamburger.style.opacity = 1;
+});
+
 const srtop = ScrollReveal({
     origin: 'top',
     distance: '80px',

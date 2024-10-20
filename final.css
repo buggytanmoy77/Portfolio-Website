@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Bebas+Neue&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Basic&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+/* ----- CHANGE THE SCROLL BAR DESIGN ----- */
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 25px;
+}
+::-webkit-scrollbar-track{
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb{
+    background: #ccc;
+    border-radius: 30px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #bbb;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+}
+.navigation-bar{
+    position: fixed;
+    width: -webkit-fill-available;
+    z-index: 100;
+}
+header{
+    background: #51adf6;
+    padding: 19px 150px;
+    font-family: "Poppins",sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 220px;
+}
+.hamburger{
+    display: none;
+    width: fit-content;
+}
+.nav-logo{
+    display: flex;
+    font-family: "Pacifico",cursive;
+    border: solid 3px black;
+    padding: 1px 4px;
+    border-radius: 43px;
+    background-color: white;
+}
+.nav-logo p{
+    font-size: 30px;
+    color: rgb(11, 209, 244);
+}
+.nav-logo span{
+    font-size: 30px;
+    color: black;
+}
+.nav-menu ul{
+    font-size: 19px;
+    display: flex;
+    gap: 90px;
+}
+.nav-menu ul li{
+    list-style-type: none;
+}
+.active{
+    background: white;
+    padding: 10px 20px;
+    border: solid 1px #a59a9a;
+    border-radius: 33px;
+    box-shadow: 0px 2px 5px 0px rgba(18, 17, 17, 0.4);
+}
+
+.nav-menu ul li a{
+    text-decoration: none;
+    color: black;
+}
+.nav-menu ul li a:hover{
+    color: #4a494b;
+}
+.resume:hover{
+    background-color: rgb(245, 216, 182);
+    border: solid 2px black;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+}
+.resume-btn:hover{
+    background-color: rgb(245, 216, 182);
+    border: solid 2px black;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+}
+.resume,.resume-btn{
+    cursor: pointer;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    padding: 13px 11px;
+    border-radius: 25px;
+    background-color: rgb(252, 241, 227);
+    white-space: nowrap;
+}
+@media only screen and (max-width: 425px){
+    ::-webkit-scrollbar{
+        width: 7px;
+        border-radius: 25px;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .resume{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+        padding: 4px 5px 1px 5px;
+    }
+} 

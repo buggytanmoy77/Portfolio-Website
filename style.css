@@ -26,7 +26,7 @@ html{
     padding: 0;
 }
 body{
-    width: 100%;
+    width: 100vw;
 }
 .navigation-bar{
     position: fixed;
@@ -43,6 +43,11 @@ nav{
     justify-content: center;
     align-items: center;
     gap: 220px;
+}
+.hamburger{
+    display: none;
+    width: fit-content;
+    opacity: 1;
 }
 .nav-logo{
     display: flex;
@@ -111,6 +116,55 @@ nav{
     padding: 3px;
     background: #48e4ffb3;
 }
+.side-bar{
+    display: flex;
+    position: fixed;
+    background-color: rgba(21, 63, 84, 0.733);
+    z-index: 200;
+    right:-500px;
+    height: 60vh;
+    width: 40vh;
+    border: 3px solid black;
+    align-items: center;
+    justify-content: center;
+    transition:right 0.3s ease;
+}
+.cross{
+    position: absolute;
+    left: 25px;
+    top:25px;
+    background: none;
+    border: none;
+}
+.cross img{
+    width: 35px;
+}
+.side-bar ul{
+    position: relative;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+.side-bar ul li{
+    list-style-type: none;
+}
+.side-bar ul li a{
+    text-decoration: none;
+    color:black;
+}
+.side-bar ul li a:hover{
+    color: #4a494b;
+}
+.active-sidebar{
+    background: rgb(213, 208, 208);
+    padding: 10px 8px;
+    border: solid 1px #a59a9a;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px 0px rgba(18, 17, 17, 0.4);
+}
 .content{
     padding-inline: 10vw;
 }
@@ -118,7 +172,7 @@ nav{
     position: relative;
     display: flex;
     height: 75vh;
-    padding-top: 14vh;
+    padding-top: 10vh;
 } 
 .content-text{
     position: relative;
@@ -481,45 +535,98 @@ nav{
     letter-spacing: 0.25px;
     font-family: "Poppins",sans-serif;
 }
-@media screen and (max-width: 1024px) {
-    .nav-menu ul {
-        gap: 40px; 
+@media only screen and (max-width: 425px){
+    ::-webkit-scrollbar{
+        width: 7px;
+        border-radius: 25px;
     }
-    .nav-logo {
-        gap: 10px;
+    .nav-menu{
+        display: none;
     }
-    .resume {
-        padding: 10px 15px; 
-        font-size: 14px; 
+    .resume{
+        display: none;
     }
-}
-@media screen and (max-width: 768px) {
-    header {
-        padding: 15px; 
+    .hamburger{
+        display: block;
+        padding: 4px 5px 1px 5px;
     }
-    .nav-menu ul {
-        display: none; 
-        flex-direction: column; 
-        position: absolute;
-        background-color: #51adf6;
+    nav{
+        justify-content: space-between;
+    }
+    header{
+        padding: 35px 57px;
+    }
+    .nav-logo{
+        padding:4px 6px;
+        border-radius: 52px;
+    }
+    .nav-logo p{
+        font-size: 45px;
+    }
+    .nav-logo span{
+        font-size: 45px;
+    }
+    body {
+        width: 100vw;
+    }
+    .content{
+        width: 260vw;
+        padding-inline: 0vw;
+    }
+    .content-box{
+        width: 114vh;
+        align-items: center;
+        flex-direction: column;  
+        justify-content: center;
+        height: 100vh;
+        padding-inline: 30vw;
+    }
+    .content-text{
         width: 100%;
-        top: 100%;
-        left: 0;
-        margin-top: 5px; 
+        order:2;
+        justify-content: center;
+        align-content: flex-start;
+        min-height: 60vh;
+        padding-left: 20px;
     }
-    .nav-menu ul.active {
-        display: flex; 
-    }
-    .nav-menu ul li {
-        margin-bottom: 10px; 
-    }
-    .nav-menu ul li a {
-        padding: 10px; 
+    .profile-pic{
+        order: 1;
+        justify-content: center;
+        min-height: 100vh;
         width: 100%;
-        text-align: center; 
+        margin-top: 60vh;
     }
-    .resume {
-        padding: 10px;
-        font-size: 12px; 
+    .image, .image img{
+        width: 70vh;
+        height: 70vh;
     }
-}
+    .name{
+        font-size: 45px;
+    }
+    .featured-text{
+        font-size: 60px;
+    }
+    .featured-text-info{
+        font-size: 30px;
+    }
+    .resume-btn{
+        font-size: 35px;
+    }
+    .resume-btn img{
+        width: 36px;
+    }
+    .icon{
+        width: 60px;
+        height: 60px;
+    }
+    .scroll-indicator{
+        display: none;
+    }
+    #skills{
+        /* background: #000; */
+        margin-top: 170vw;
+        width: 260vw;
+    }
+
+    
+} 
