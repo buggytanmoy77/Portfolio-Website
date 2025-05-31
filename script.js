@@ -1,4 +1,8 @@
 console.log('hello welcome to my portfolio')
+
+let width = window.innerWidth;
+console.log(width)
+
 document.addEventListener('DOMContentLoaded', function() {
     var typedText = document.getElementById('type-effect');
 
