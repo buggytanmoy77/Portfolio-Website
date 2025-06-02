@@ -42,7 +42,7 @@ body{
 header{
     width: 100%;
     background: #51adf6;
-    padding: 3.5vh 0vw;
+    padding: 3vh 0vw;
     font-family: "Poppins",sans-serif;
 }
 nav{
@@ -173,8 +173,10 @@ nav{
     border-radius: 10px;
     box-shadow: 0px 2px 5px 0px rgba(18, 17, 17, 0.4);
 }
+.gap{
+    height: 11vh;
+}
 .content{
-    padding-top: 10vh;
     padding-inline: 10vw;
     display: flex;
     flex-direction: column;
@@ -192,7 +194,7 @@ nav{
     display: flex;
     justify-content: center;
     align-content: center;
-    min-height: 80vh;
+    min-height: 65vh;
     flex-direction: column;
     width: 50%;
     padding-left: 1vw;
@@ -258,14 +260,14 @@ nav{
     display: flex;
     justify-content: right;
     align-content: center;
-    min-height: 80vh;
+    min-height: 65vh;
     width: 50%;
 }
 .image{
     border: solid 4px #84d4ff;
     margin: auto 0;
-    width: 60%;
-    height: 60%;
+    width: 65%;
+    height: 65%;
     border-radius: 55% 45% 55% 45%;
     overflow: hidden;
     animation: imgFloat 7s ease-in-out infinite;
