@@ -106,40 +106,40 @@ const srtop = ScrollReveal({
     duration: 1500,
     reset: true     
 })
-srtop.reveal('.name',{})
-srtop.reveal('.featured-text',{delay: 100})
-srtop.reveal('.featured-text-info',{delay: 200})
-srtop.reveal('.resume-btn',{delay: 200})
-srtop.reveal('.social',{delay: 200})
-srtop.reveal('.profile-pic',{delay: 100})
-srtop.reveal('.skills-heading',{})
-const srLeft = ScrollReveal({
-    origin: 'left',
-    distance: '80px',
-    duration: 1500,
-    reset: true
-})
-srLeft.reveal('.frontend',{})
-  const srRight = ScrollReveal({
-    origin: 'right',
-    distance: '80px',
-    duration: 1500,
-    reset: true
-})
-srRight.reveal('.design',{})
-const srbottom = ScrollReveal({
-    origin: 'bottom',
-    distance: '30px',
-    duration: 1500,
-    reset: true     
-})
-srbottom.reveal('.programming',{})
-srbottom.reveal('.skills-img',{delay:100})
-srbottom.reveal('.projects-heading',{})
-const sr = ScrollReveal({
-    delay: 100  
-});
-sr.reveal('.all-projects', { reset: true }); 
-sr.reveal('.contact',{reset:true});
-sr.reveal('.scroll-indicator',{reset:true});
+// srtop.reveal('.name',{})
+// srtop.reveal('.featured-text',{delay: 100})
+// srtop.reveal('.featured-text-info',{delay: 200})
+// srtop.reveal('.resume-btn',{delay: 200})
+// srtop.reveal('.social',{delay: 200})
+// srtop.reveal('.profile-pic',{delay: 100})
+// srtop.reveal('.skills-heading',{})
+// const srLeft = ScrollReveal({
+//     origin: 'left',
+//     distance: '80px',
+//     duration: 1500,
+//     reset: true
+// })
+// srLeft.reveal('.frontend',{})
+//   const srRight = ScrollReveal({
+//     origin: 'right',
+//     distance: '80px',
+//     duration: 1500,
+//     reset: true
+// })
+// srRight.reveal('.design',{})
+// const srbottom = ScrollReveal({
+//     origin: 'bottom',
+//     distance: '30px',
+//     duration: 1500,
+//     reset: true     
+// })
+// srbottom.reveal('.programming',{})
+// srbottom.reveal('.skills-img',{delay:100})
+// srbottom.reveal('.projects-heading',{})
+// const sr = ScrollReveal({
+//     delay: 100  
+// });
+// sr.reveal('.all-projects', { reset: true }); 
+// sr.reveal('.contact',{reset:true});
+// sr.reveal('.scroll-indicator',{reset:true});
 
