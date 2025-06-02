@@ -26,8 +26,7 @@ html{
     padding: 0;
 }
 body{
-    width: 100vw;
-    overflow-x: hidden;
+    width: 100%;
 }
 .navigation-bar{
     position: fixed;
@@ -36,14 +35,14 @@ body{
 }
 header{
     background: #51adf6;
-    padding: 19px 150px;
+    padding: 3.5vh 0vw;
     font-family: "Poppins",sans-serif;
 }
 nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 220px;
+    gap: 12vw;
 }
 .hamburger{
     display: none;
@@ -98,7 +97,7 @@ nav{
     gap: 2px;
     font-family: "Poppins", sans-serif;
     font-size: 15px;
-    padding: 13px 11px;
+    padding: 0.7rem 1rem;
     border-radius: 25px;
     background-color: rgb(252, 241, 227);
     white-space: nowrap;
@@ -114,7 +113,8 @@ nav{
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
 }
 .seperator{
-    padding: 3px;
+    height: 1vh;
+    width: 100%;
     background: #48e4ffb3;
 }
 .side-bar{
@@ -167,13 +167,18 @@ nav{
     box-shadow: 0px 2px 5px 0px rgba(18, 17, 17, 0.4);
 }
 .content{
+    padding-top: 10vh;
     padding-inline: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4vh;
 }
 .content-box{
     position: relative;
     display: flex;
     height: 75vh;
-    padding-top: 10vh;
 } 
 .content-text{
     position: relative;
@@ -183,14 +188,14 @@ nav{
     min-height: 80vh;
     flex-direction: column;
     width: 50%;
-    padding-left: 20px;
+    padding-left: 1vw;
 }
 .name{
     width: fit-content;
     font-family: 'Pacifico';
     background-color: #ff4848;
     color: white;
-    padding: 4px 20px;
+    padding: 0.3rem 1rem;
     font-size: 20px;
     border-radius: 5px;
 }
@@ -199,7 +204,7 @@ nav{
     font-size: 50px;
     font-weight: 500;
     color: black;
-    margin-block: 20px;
+    margin-block: 2vh;
 }
 #type-effect{
     font-family: "Bebas neue",sans-serif;
@@ -216,15 +221,15 @@ nav{
 }
 .featured-text-info{
     font-size: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 3vh;
     font-family: "Poppins",sans-serif;
 }
 .social,.social-btns{
     display: flex;
     justify-content: start;
     align-items: center;
-    padding: 19px 3px;
-    gap: 40px;
+    padding: 3vh 0;
+    gap: 3vw;
 }
 .icon:hover{
     background-color: rgb(245, 216, 182);
@@ -252,15 +257,15 @@ nav{
 .image{
     border: solid 4px #84d4ff;
     margin: auto 0;
-    width: 380px;
-    height: 380px;
+    width: 60%;
+    height: 60%;
     border-radius: 55% 45% 55% 45%;
     overflow: hidden;
     animation: imgFloat 7s ease-in-out infinite;
 }
 .image img{
-    width: 380px;
-    height: 380px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 @keyframes imgFloat {
@@ -310,11 +315,12 @@ nav{
 
 }
 .skills{
+    padding-block: 2vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-top: 12vh;
+    gap: 3vh;
 }
 .skills-heading{
     display: flex;
@@ -323,9 +329,8 @@ nav{
     flex-direction: column;
     width: 60%;
     min-height: 24vh;
-    gap: 15px;
+    gap: 1vh;
     box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.6);
-    margin-bottom: 3vh;
     padding: 3vh 0;
     border-radius: 14px;
 }
@@ -345,7 +350,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 1.5vw;
 }
 .frontend,.design,.programming{
     display: flex;
@@ -371,7 +376,7 @@ nav{
 }
 .skills-img{
     display: flex;
-    margin-bottom: 10vh;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 2vh;
@@ -383,7 +388,7 @@ nav{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-top: 6vh;
+    padding-block: 2vh;
     gap: 5vh;
 }
 .projects-heading{
@@ -393,9 +398,8 @@ nav{
     flex-direction: column;
     width: 60%;
     min-height: 24vh;
-    gap: 15px;
+    gap: 1vh;
     box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.6);
-    margin-bottom: 2vh;
     padding: 3vh 0;
     border-radius: 14px;
 }
@@ -417,7 +421,7 @@ nav{
     align-items: center;
     flex-direction: column;
     gap: 4vh;
-    padding: 8vh;
+    padding: 6vh 2vw;
     border-radius: 20px;
     box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.6);
 }
@@ -425,8 +429,8 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15vh;
-    padding: 0 4vh;
+    gap: 5vw;
+    padding: 0 1.5vw;
 }
 .video video{
     border-radius: 10px;
@@ -437,27 +441,27 @@ nav{
     font-family: "Poppins",sans-serif;
 }
 .contact{
-    margin: 10vh 0;
+    padding-block: 2vh;
 }
 .contact-boxes{
-    padding: 10vh 0;
+    padding: 7vh 6vw;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.6);
-    margin: 0 10vh;
     border-radius: 5vh;
+    gap: 8vw;
 }
 .contact-info{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 50%;
+    width: 40%;
     gap: 5vh;
 }
 .form{
-    width: 50%;
+    width: 60%;
 }
 .contact-info-heading{
     font-size: 7vh;
@@ -496,19 +500,19 @@ nav{
     gap: 4vh;
 }
 .form form input,textarea{
-    width: 80%;
+    width: 100%;
     border: solid 1px #47b5f0;
-    font-size: 2vh;
+    font-size: 1em;
     font-family: "Poppins";
     font-weight: 300;
-    padding: 10px;
+    padding: 0.7rem;
     border-radius: 10px;
 }
 .submit-btn{
     cursor: pointer;
     font-family: "Poppins", sans-serif;
-    font-size: 15px;
-    padding: 8px 17px;
+    font-size: 1em;
+    padding: 1vh 3vw;
     border-radius: 10px;
     background-color: rgb(193, 255, 250);
     border: solid 0.5px #8d8dff;
@@ -517,7 +521,17 @@ nav{
     background-color:  rgb(126, 222, 214);
     border: solid 1px black;
 }
+.ending{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
 .footer{
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -567,9 +581,7 @@ nav{
     .nav-logo span{
         font-size: 45px;
     }
-    body {
-        width: 100vw;
-    }
+    
     .content{
         width: 260vw;
         padding-inline: 0vw;
