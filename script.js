@@ -92,11 +92,11 @@ const hamburger = document.querySelector('.hamburger');
 const sidebar = document.querySelector('.side-bar');
 const cross = document.querySelector('.cross');
 hamburger.addEventListener('click',function(){
-    sidebar.style.right = 0;
+    sidebar.style.right = "0%";
     hamburger.style.opacity = 0.1;
 });
 cross.addEventListener('click',function(){
-    sidebar.style.right = "-500px";
+    sidebar.style.right = "-100%";
     hamburger.style.opacity = 1;
 });
 
