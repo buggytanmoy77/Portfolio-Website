@@ -106,40 +106,44 @@ const srtop = ScrollReveal({
     duration: 1500,
     reset: true     
 })
-// srtop.reveal('.name',{})
-// srtop.reveal('.featured-text',{delay: 100})
-// srtop.reveal('.featured-text-info',{delay: 200})
-// srtop.reveal('.resume-btn',{delay: 200})
-// srtop.reveal('.social',{delay: 200})
-// srtop.reveal('.profile-pic',{delay: 100})
-// srtop.reveal('.skills-heading',{})
-// const srLeft = ScrollReveal({
-//     origin: 'left',
-//     distance: '80px',
-//     duration: 1500,
-//     reset: true
-// })
-// srLeft.reveal('.frontend',{})
-//   const srRight = ScrollReveal({
-//     origin: 'right',
-//     distance: '80px',
-//     duration: 1500,
-//     reset: true
-// })
-// srRight.reveal('.design',{})
-// const srbottom = ScrollReveal({
-//     origin: 'bottom',
-//     distance: '30px',
-//     duration: 1500,
-//     reset: true     
-// })
-// srbottom.reveal('.programming',{})
-// srbottom.reveal('.skills-img',{delay:100})
-// srbottom.reveal('.projects-heading',{})
-// const sr = ScrollReveal({
-//     delay: 100  
-// });
-// sr.reveal('.all-projects', { reset: true }); 
-// sr.reveal('.contact',{reset:true});
-// sr.reveal('.scroll-indicator',{reset:true});
+const isMobile = window.innerWidth <= 500;
 
+const config = {
+  distance: isMobile ? '30px' : '80px',
+  duration: isMobile ? 800 : 1500,
+  once: true
+};
+
+ScrollReveal().reveal('.name', config);
+ScrollReveal().reveal('.featured-text', { ...config, delay: 100 });
+ScrollReveal().reveal('.featured-text-info', { ...config, delay: 200 });
+ScrollReveal().reveal('.resume-btn', { ...config, delay: 200 });
+ScrollReveal().reveal('.social', { ...config, delay: 200 });
+ScrollReveal().reveal('.profile-pic', { ...config, delay: 100 });
+
+ScrollReveal().reveal('.skills-heading', config);
+ScrollReveal().reveal('.projects-heading', { ...config, origin: 'bottom' });
+
+ScrollReveal().reveal('.frontend', { ...config, origin: 'left' });
+ScrollReveal().reveal('.design', { ...config, origin: 'right' });
+ScrollReveal().reveal('.programming', { ...config, origin: 'bottom' });
+ScrollReveal().reveal('.skills-img', { ...config, origin: 'bottom', delay: 100 });
+
+ScrollReveal().reveal('.all-projects', { ...config, delay: 100 });
+ScrollReveal().reveal('.contact', config);
+ScrollReveal().reveal('.scroll-indicator', config);
+
+
+ document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm('service_7cewkmi', 'template_5iw0f0e', this)
+      .then(function(response) {
+        console.log('SUCCESS!', response.status, response.text);
+        alert("Email sent successfully!");
+        document.getElementById('contact-form').reset();
+      }, function(error) {
+        console.log('FAILED...', error);
+        alert("Failed to send email. Please try again later.");
+      });
+  });
