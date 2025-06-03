@@ -109,6 +109,12 @@ nav{
     background-color: rgb(252, 241, 227);
     white-space: nowrap;
 }
+.download{
+    display: flex;
+    gap: 0.5vw;
+    color: black;
+    text-decoration: none;
+}
 .resume:hover{
     background-color: rgb(245, 216, 182);
     border: solid 2px black;
@@ -130,9 +136,9 @@ nav{
     background-color: rgba(21, 63, 84, 0.733);
     z-index: 200;
     right:-500px;
-    height: 60vh;
+    height: 100vh;
     width: 40vh;
-    border: 3px solid black;
+    backdrop-filter: blur(10px); 
     align-items: center;
     justify-content: center;
     transition:right 0.3s ease;
@@ -161,22 +167,21 @@ nav{
 }
 .side-bar ul li a{
     text-decoration: none;
-    color:black;
-}
-.side-bar ul li a:hover{
-    color: #4a494b;
+    font-family: Poppins;
+    font-weight: 400;
+    color: black;
 }
 .active-sidebar{
-    background: rgb(213, 208, 208);
-    padding: 10px 8px;
-    border: solid 1px #a59a9a;
+    background: rgb(255, 247, 247);
+    color: #000000;
+    padding: 1vh 4vw;
+    border: solid 1px #000000;
     border-radius: 10px;
     box-shadow: 0px 2px 5px 0px rgba(18, 17, 17, 0.4);
 }
-.gap{
-    height: 11vh;
-}
+
 .content{
+    padding-top: 13vh;
     padding-inline: 10vw;
     display: flex;
     flex-direction: column;
@@ -255,6 +260,11 @@ nav{
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.4);
     cursor: pointer;
     background-color: beige;
+}
+
+.instagram,.linkdin,.facebook,.github{
+    color: black;
+    text-decoration: none;
 }
 .profile-pic{
     display: flex;
@@ -434,7 +444,7 @@ nav{
     border-radius: 20px;
     box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.6);
 }
-.portfolio,.netflix,.spotify{
+.portfolio,.netflix,.spotify,.eclinic,.diagno,.image-generator{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -707,7 +717,7 @@ nav{
         font-size: 1em;
         padding: 0 5.5vw;
     }
-    .portfolio, .netflix, .spotify{
+    .portfolio, .netflix, .spotify,.diagno,.eclinic,.image-generator{
         flex-direction: column;
     }
     .video video{
@@ -718,7 +728,13 @@ nav{
         font-size: 1em;
         padding: 0 2vw;
     }
-    .netflix .project-info{
+    .eclinic .project-info{
+        order: 2;
+    }
+    .image-generator .project-info{
+        order: 2;
+    }
+    .spotify .project-info{
         order: 2;
     }
     .contact{
