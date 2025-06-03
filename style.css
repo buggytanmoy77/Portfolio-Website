@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Basic&display=swap');
 html{
     scroll-behavior: smooth;
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
 /* ----- CHANGE THE SCROLL BAR DESIGN ----- */
 ::-webkit-scrollbar{
@@ -134,10 +134,10 @@ nav{
 .side-bar{
     display: flex;
     position: fixed;
-    top: 0;
     background-color: rgba(21, 63, 84, 0.733);
     z-index: 1000;
-    right: -100%;
+    top: 0;
+    right:-100%;
     height: -webkit-fill-available;
     width: 40vh;
     backdrop-filter: blur(10px); 
