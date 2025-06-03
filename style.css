@@ -133,10 +133,11 @@ nav{
 .side-bar{
     display: flex;
     position: fixed;
+    top: 0;
     background-color: rgba(21, 63, 84, 0.733);
-    z-index: 200;
-    right:-500px;
-    height: 100vh;
+    z-index: 1000;
+    right: 100%;
+    height: -webkit-fill-available;
     width: 40vh;
     backdrop-filter: blur(10px); 
     align-items: center;
